@@ -9,11 +9,6 @@ from functools import reduce
 from .models import FieldLog
 import json
 
-"""
-from sentence_ponds.models import Sentence
-from dictionaries.models import Dictionary
-from pondlets.models import DialogueSentence, Pondlet
-"""
 
 def postFieldData(request, data):
     # do something
@@ -32,3 +27,8 @@ def postFieldData(request, data):
 
     return JsonResponse(response_data, safe=False)
 
+def getFieldData(request):
+    # 
+    #
+
+    return 1
