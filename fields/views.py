@@ -2,33 +2,43 @@ from django.shortcuts import render
 from django.db import connection
 
 from django.http import JsonResponse, HttpResponse
-from django.core import serializers
-from django.core.files.storage import default_storage
-from django.db.models import Q, Count, Avg
-from functools import reduce
+import urllib.parse
 from .models import FieldLog
 import json
 
-"""
-from sentence_ponds.models import Sentence
-from dictionaries.models import Dictionary
-from pondlets.models import DialogueSentence, Pondlet
-"""
 
 def postFieldData(request, data):
     # do something
-    data_parts = data.split('|')
+    data = urllib.parse.unquote(data)
+    data_parts = data.split(',')
     parts_count = len(data_parts)
 
-    if parts_count == 2:
-      flog = FieldLog.objects.create(sensor=data_parts[0], payload=data_parts[1])
-      flog.save();
-      flag = "ok"
+    """ integrity & security check needed 
+        1. check if scheme_id is legitimate
+        2. check if user_id is belong the same user
+    """
+    if parts_count >= 2:
+        params = {}
+        for i in range(parts_count):
+            if i == 0:
+                params['field_id']=data_parts[i]
+            else:
+                stri = str(i)
+                stri = stri.zfill(2)
+                params['f' + stri]=data_parts[i]
+        flog = FieldLog.objects.create(**params)
+        flog.save();
+        flag = "ok"
     else:
-      flag = "format error"
+        flag = "format error"
 
     response_data = {}
     response_data['status'] = flag
 
     return JsonResponse(response_data, safe=False)
 
+def getFieldData(request):
+    # 
+    #
+
+    return 1
