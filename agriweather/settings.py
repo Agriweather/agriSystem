@@ -40,7 +40,6 @@ INSTALLED_APPS = [
 
     'fields',
     'schemes',
-    'users',
 ]
 
 MIDDLEWARE = [
