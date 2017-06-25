@@ -14,6 +14,7 @@ class Field(models.Model):
 
 
 class FieldLog(models.Model):
+    field = models.ForeignKey(Field, default=1)
     datetime = models.DateTimeField(auto_now=True)
     scheme = models.ForeignKey(Scheme, default=1)
     f01 = models.CharField(max_length=64, blank=True)

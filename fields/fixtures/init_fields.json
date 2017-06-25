@@ -1,0 +1,15 @@
+[
+{
+    "model": "fields.field",
+    "pk": 1,
+    "fields": {
+        "datetime": "2017-06-25T00:00:00Z",
+        "user": 1,
+        "name": "\u4e00\u755d\u826f\u7530",
+        "description": "",
+        "gps_longitude": "0.000",
+        "gps_latitude": "0.000",
+        "city": ""
+    }
+}
+]
