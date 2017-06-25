@@ -1,0 +1,18 @@
+[
+{
+    "model": "schemes.scheme",
+    "pk": 1,
+    "fields": {
+        "name": "\u6c23\u8c61\u76d2\u5b50",
+        "descriptor": "PS01 \u6e2c\u7ad9\u6c23\u58d3(hPa), TX01 \u6c23\u6eab(\u2103), RH01 \u76f8\u5c0d\u6fd5\u5ea6(%), WD01 \u5e73\u5747\u98a8\u98a8\u901f(m/s), WD02 \u5e73\u5747\u98a8\u98a8\u5411(360 degree), PP01 \u964d\u6c34\u91cf(mm), SS01 \u65e5\u7167\u6642\u6578(hr)\b, \u96fb\u58d3"
+    }
+},
+{
+    "model": "schemes.scheme",
+    "pk": 2,
+    "fields": {
+        "name": "\u7530\u9593\u611f\u6e2c\u5668",
+        "descriptor": "\u6dfa\u5c64\u571f\u58e4\u6eab\u5ea6, \u6dfa\u5c64\u571f\u58e4\u6fd5\u5ea6, \u6df1\u5c64\u571f\u58e4\u6eab\u5ea6, \u6df1\u5c64\u571f\u58e4\u6fd5\u5ea6, \u8d85\u6df1\u5c64\u571f\u58e4\u6eab\u5ea6, \u8d85\u6df1\u5c64\u571f\u58e4\u6fd5\u5ea6, \u96fb\u58d3"
+    }
+}
+]
