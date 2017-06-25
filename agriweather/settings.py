@@ -25,7 +25,7 @@ SECRET_KEY = 's1z5!-!^v@eygfdrc&o#hfzzi27pe3n@70v9h7o2#7e)9w153n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['52.183.83.215', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['52.183.83.215', 'agriweather.westus2.cloudapp.azure.com', 'localhost', '127.0.0.1']
 
 # Application definition
 
