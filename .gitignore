@@ -1,5 +1,5 @@
 # develpment
-ponddy_chinese/settings/development.py
+agriweather/settings/development.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
